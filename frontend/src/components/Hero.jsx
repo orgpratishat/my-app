@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import Hero1 from "../assets/Hero.png";
 import { useNavigate } from "react-router-dom";
+import Header from './Header';
 
 const Hero = () => {
 
@@ -12,12 +13,9 @@ const Hero = () => {
   return (
     <div className="h-[100vh] w-full  px-4 py-8 md:px-8 lg:px-16 overflow-hidden">
       {/* Navigation */}
-      <nav className="mb-16 md:mb-16">
-        <div className="text-2xl font-bold text-gray-800 cursor-pointer" onClick={() => window.location.href = '/'}>
-          Prati<span className="text-[#5BB89D]">Shat</span>
-        </div>
-      </nav>
       
+      
+      <Header/>
 
       {/* Main Content */}
       <div className="mx-auto w-full ">
