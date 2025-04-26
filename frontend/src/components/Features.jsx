@@ -153,6 +153,7 @@ const Features = () => {
                 </div>
               </motion.div>
 
+
               <motion.div
                 ref={ref}
                 className='rounded-lg bg-white p-8 shadow-lg transition-shadow hover:shadow-xl w-[28vw] h-[39vh]'
@@ -161,8 +162,31 @@ const Features = () => {
                 animate={inView ? 'visible' : 'hidden'}
                 style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }} // Transparent background
               >
-                {/* Add content for the second small card here */}
+                <div className="mb-6 flex items-center gap-3">
+                  <div className="rounded-xl bg-blue-500 p-2">
+                    <Users className="h-6 w-6 text-white" />
+                  </div>
+                  <h2 className="text-lg font-semibold text-gray-800">Earn Rewards</h2>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                    <div className="h-2 w-2 rounded-full bg-black"></div>
+                    <h3 className="font-semibold text-gray-800 text-[16px]">Pratishat Coins</h3>
+                  </div>
+                  <div className='px-6'>
+                    <p className="text-gray-500 text-[14px] ">
+                    Participate in surveys and earn Pratishat Coins in your wallet. Redeem these coins for exciting gifts 
+                    </p>
+                  </div>
+
+                  <button className=" rounded-sm text-purple-500 ml-[35vh] px-8 py-3 font-medium underline transition-all  cursor-pointer">
+                    Participate
+                  </button>
+                </div>
               </motion.div>
+
+            
             </div>
           </div>
         </div>
