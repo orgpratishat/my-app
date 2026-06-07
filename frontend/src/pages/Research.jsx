@@ -56,6 +56,13 @@ const Research = () => {
             <span className="ml-3 text-xs font-medium text-gray-500">Create Research Paper</span>
           </div>
 
+          <div className="flex items-center mb-6 cursor-pointer">
+            <div className="w-6 h-6 bg-gray-100 rounded-sm flex items-center justify-center">
+             <img src={create_research_paper} alt="" />
+            </div>
+            <span className="ml-3 text-xs font-medium text-gray-500">AI to create research paper</span>
+          </div>
+
           
         </div>
 
